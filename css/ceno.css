@@ -1,0 +1,74 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+html {
+    --ceno-prim-200: #BAE6FD;
+    --ceno-primary: #0EA5E9;
+    --ceno-secondary: #F97316;
+    --ceno-prim-700: #0369A1;
+    --ceno-sec-500: #ea580c;
+    --ceno-sec-700: #C2410C;
+    font-family: Inter, sans-serif !important;
+    --lg-break: 1100px;
+    --med-break: 600px;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f9ff;
+}
+
+.default-width {
+    margin-inline: auto;
+    max-width: 1100px;
+}
+
+.default-vmargin { 
+    margin-block: 2em;
+}
+
+.default-vpadding { 
+    padding-block: 2em;
+}
+
+.blue-bg {
+    background: #0EA5E9 !important;
+}
+
+.orange-bg {
+    background: #EA580C !important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.no-dec {
+    text-decoration: none;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.fff-bg {
+    background: #fff;
+}
+
+.center {
+    display: grid;
+    place-content: center;
+}

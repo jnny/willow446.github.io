@@ -1,0 +1,131 @@
+footer {
+    padding-inline: 1.2em;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #0B3954;
+    background: white;
+    padding-bottom: 0;
+}
+
+.footer-margin {
+    padding-top: 4em;
+    margin-inline: auto;
+    max-width: 1100px;
+    border-top: 1px dashed #000000;
+}
+
+.ceno-footer-statement {
+    font-size: 16px;
+    max-width: 360px;
+}
+
+.ceno-footer-statement img {
+    max-width: 120px;
+    max-height: 36px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    gap: 3em;
+}
+
+.text-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+.link-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #0B3954;
+}
+
+.footer-links a:visited {
+    color: #0B3954;
+}
+
+.link-btn {
+    color: white !important;
+    font-weight: 500;
+    border-radius: 4px;
+    padding-inline: 18px;
+    padding-block: 8px; 
+}
+
+.social-icon-grid {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: repeat(4, max-content);
+    gap: 12px;
+}
+
+.social-icon-grid img {
+    width: 28px;
+    height: 28px;
+}
+
+.cenoid-footer {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    background-color: white;
+}
+
+@media (max-width: 1100px) {
+    .footer-margin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ceno-footer-statement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ceno-footer-statement p {
+        text-align: center;
+    }
+    .link-col {
+        align-items: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        margin-top: 3em;
+    }
+    .social-icon-grid {
+        place-self: center;
+        margin-bottom: 2em;
+        grid-template-columns: repeat(5, max-content);
+        grid-template-rows: repeat(2, max-content);
+        column-gap: 2em;
+        row-gap: 1em;
+    }
+    .mail-icon {
+        grid-column: 2 / span 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .cenoid-footer img {
+        padding-inline: 1em;
+        max-width: calc(100% - 2em);
+    }
+}
+
+@media (max-width: 450px) {
+    .social-icon-grid {
+        grid-template-columns: repeat(4, max-content);
+        grid-template-rows: repeat(2, max-content);
+    }
+}
