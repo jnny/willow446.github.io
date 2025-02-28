@@ -1,0 +1,151 @@
+nav {
+    background: #fff;
+}
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+    gap: 6em;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; 
+    max-width: 430px;
+}
+
+.hero-text > span {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0B3954;
+}
+
+.hero-header {
+    font-size: 64px;
+    font-weight: 700;
+    color: #06283C;
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0B3954;
+    margin: 0;
+}
+
+.store-badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.coming-soon-btn {
+    border: 2px dashed #A6A6A6;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    padding-inline: 12px;
+    padding-block: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2, h4 {
+    color: #0B3954;
+}
+
+
+
+p {
+    color: #0B3954;
+    font-size: 20px;
+}
+
+.important {
+    display: flex;
+    gap: 1em;
+    background: #FFE0E0;
+    border-radius: 8px;
+    padding-inline: 1em;
+    padding-block: 1em;
+    font-size: 20px;
+}
+
+.important img {
+    max-width: 100px;
+}
+
+.important-text h4 {
+    margin-bottom: 0;
+    margin-top: 0.4em;
+    text-transform: capitalize;
+    color: #EF591E;
+}
+
+.important-text p {
+    margin-top: 0.4em;
+    line-height: 28px;
+    color: #0B3954;
+}
+
+.repo-container {
+    text-align: center;
+    max-width: 500px;
+}
+
+.dd-container {
+    text-align: center;
+    max-width: 750px;
+}
+
+.dd-container h4 {
+    font-size: 20px;
+}
+
+.code-wrapper {
+    width: 100%;
+    text-align: start;
+    background: #FDF9EA;
+    color: #0B3954;
+    padding-block: 0.4em;
+    padding-inline: 1em;
+    border-radius: 8px;
+}
+
+code {
+    text-align: start;
+}
+
+.pubkey {
+    color: #F60958;
+    font-size: 18px;
+}
+
+.flexboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexboxes h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #0B3954;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    gap: 3em;
+    align-items: center;
+}
+
+.flex img {
+    max-height: 300px;
+}

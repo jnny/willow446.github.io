@@ -1,0 +1,86 @@
+nav {
+    background: #fff;
+}
+
+.donate {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+.donate-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; 
+    max-width: 430px;
+}
+
+.donate-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #06283C;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0B3954;
+    margin: 0;
+}
+
+.donate-card-container {
+    margin-inline-end: calc(1.2em + calc(-0.5 * calc(100vw - 1100px)));
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.card {
+    display: flex;
+    gap: 2em;
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    padding-block: 1em;
+    background: #FFF7D8;
+    border-radius: 8px;
+}
+
+.card-text h2 {
+    font-size: 32px;
+    color: #0B3954;
+    margin-bottom: 0.4em;
+}
+
+.filled-btn {
+    color: #fff !important;
+    padding-inline: 24px;
+    padding-block: 12px;
+    font-weight: 500;
+    background-color: #EA580C;
+    outline: 2px solid #EA580C;
+    border-radius: 12px;
+    width: fit-content;
+    font-size: 20px;
+    margin-block: 1em;
+}
+
+.outline-btn {
+    padding-inline: 24px;
+    padding-block: 12px;
+    font-weight: 500;
+    color: #EA580C;
+    outline: 2px solid #EA580C;
+    border-radius: 12px;
+    width: fit-content;
+    font-size: 20px;
+    margin-block: 1em;
+}
+
+.btc-qr {
+    max-width: 200px;
+}
+
+.btc-addr {
+    font-size: 20px;
+    font-weight: bold;
+}

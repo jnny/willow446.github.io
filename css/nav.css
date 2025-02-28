@@ -8,8 +8,8 @@
 
 /* nav panel */
 nav {
-    margin-inline: 1.2em;
-    margin-block: 1.2em;
+    padding-inline: 1.2em;
+    padding-block: 1.2em;
     font-size: 20px;
     line-height: 24px;
     font-weight: 500;
