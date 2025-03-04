@@ -129,10 +129,6 @@ html {
     }
 }
 
-.relpos {
-    position: relative;
-}
-
 .center-text-arcs {
     max-width: calc(100vw - 600px);
     display: flex;

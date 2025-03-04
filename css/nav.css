@@ -194,8 +194,8 @@ nav .download-icon-btn {
 
 @media (max-width: 600px) {
     nav {
-        padding-inline: 0.2em;
-        padding-block: 0.2em;
+        padding-inline: 1em;
+        padding-block: 1em;
         font-size: 16px;
 
     }
@@ -302,10 +302,5 @@ label .mobile-i18n-chevron {
 
     .download-btn {
         display: none;
-    }
-
-    nav {
-        margin-inline: 12px;
-        margin-block: 12px;
     }
 }
