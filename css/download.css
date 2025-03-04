@@ -2,10 +2,6 @@ nav {
     background: #fff;
 }
 
-main {
-    font-size: 20px;
-}
-
 .hero {
     max-width: 90%;
 }
@@ -65,9 +61,6 @@ main {
 }
 
 @media (max-width: 1100px) {
-    main {
-        font-size: 16px;
-    }
     .hero-container {
         flex-direction: column-reverse;
         gap: 2em;
