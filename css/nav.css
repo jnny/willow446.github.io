@@ -196,17 +196,24 @@ nav .download-icon-btn {
     nav {
         padding-inline: 1em;
         padding-block: 1em;
-        font-size: 16px;
 
     }
     .mobile-nav-menu {
-        gap: 18px;
+        gap: 12px;
     }
 }
 
 @media (max-width: 350px) {
     .i18n-toggle-icon img {
         display: none;
+    }
+    nav {
+        padding-inline: 8px;
+        padding-block: 8px;
+
+    }
+    .mobile-nav-menu {
+        gap: 4px;
     }
 }
 

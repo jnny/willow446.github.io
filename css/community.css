@@ -6,12 +6,18 @@
     gap: 3em;
 }
 
+.hero-container img {
+    max-width: 90%;
+}
+
 @media (max-width: 1100px) {
     .hero-container {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         gap: 0;
+        font-size: 40px;
+        padding-top: 1em;
     }
 }
 
@@ -19,7 +25,6 @@
     display: flex;
     align-items: center;
     gap: 6em;
-    font-size: 20px;
     color: #0B3954;
     font-weight: 400;
 }
@@ -29,7 +34,7 @@
 }
 
 .bab h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     color: #06283C;
 }
@@ -52,7 +57,6 @@
     display: flex;
     align-items: center;
     gap: 6em;
-    font-size: 20px;
     color: #0B3954;
     font-weight: 400;
 }
@@ -62,7 +66,7 @@
 }
 
 .contribute h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     color: #06283C;
 }
@@ -79,7 +83,6 @@
     display: flex;
     align-items: center;
     gap: 6em;
-    font-size: 20px;
     color: #0B3954;
     font-weight: 400;
 }
@@ -100,4 +103,16 @@
         align-items: center;
         gap: 0;
     }
+}
+
+.fff-bg, .gray-bg {
+    padding-inline: 1em;
+}
+
+.gray-bg img {
+    max-width: 100%;
+}
+
+.fff-bg img {
+    max-width: 100%;
 }
