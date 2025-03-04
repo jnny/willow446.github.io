@@ -8,9 +8,9 @@
 
 /* nav panel */
 nav {
+    font-size: 20px;
     padding-inline: 1.2em;
     padding-block: 1.2em;
-    font-size: 20px;
     line-height: 24px;
     font-weight: 500;
     position: relative;
@@ -31,7 +31,6 @@ nav a:visited {
 }
 
 .desktop-nav {
-    font-size: 20px;
     line-height: 24px;
     width: 100%;
     display: flex;
@@ -191,6 +190,24 @@ nav .download-icon-btn {
     padding-inline-start: 16px;
     padding-inline-end: 16px;
     padding-block: 6px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding-inline: 0.2em;
+        padding-block: 0.2em;
+        font-size: 16px;
+
+    }
+    .mobile-nav-menu {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 350px) {
+    .i18n-toggle-icon img {
+        display: none;
+    }
 }
 
 .mobile-nav-panel {
