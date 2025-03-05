@@ -28,11 +28,15 @@ for dir in $(find ../_en.src -type d -not -wholename "../_en.src"); do
         echo -e "$(pandoc --template=../_en.dev/\$metadata.html $md)$md" >> tmpmeta
     done
     echo "<main>" > tmp
+    dirname=$(basename $dir)
+    echo "<h1 class='title'>$dirname</h1>" >> tmp
+    echo "<section>" >> tmp
     cat tmpmeta | sort -r >> sortedmeta
     while read line; do
         md=$(echo $line | cut -d "%" -f2)
         pandoc --template=../_en.dev/\$card.html $md >> tmp
     done <sortedmeta
+    echo "</section>" >> tmp
     echo "</main>" >> tmp
     mv "tmp" "$dir/index.html"
 done
@@ -47,7 +51,7 @@ done
 
 cd ../_en.dev
 
-# Search all files for occurences of $DOWNLOAD and replace with download template
+# Search all files for occurrences of $DOWNLOAD and replace with download template
 for html_src in $(find ../_en.src -regex '.*/[^_][^/]+\.html'); do
     sed -i '/$DOWNLOAD/{
         s/$DOWNLOAD//g

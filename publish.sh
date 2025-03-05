@@ -3,6 +3,8 @@
 # Takes _en.src, generates all locales, and builds all their sites
 # with overwrites!
 
+./build.sh
+
 ./pot-extract.sh
 ./po-update.sh
 
@@ -20,7 +22,7 @@ for lang in $(./translations.sh); do
 
     for html_src in $(find ../_$lang.src -regex '.*/[^_][^/]+\.html'); do
         page="$(basename "${html_src%%.html}")"
-        html="$(echo $page | sed "s#../_$lang.src#.#g").html"
+        html="$(echo $html_src | sed "s#../_$lang.src#.#g")"
         install -D /dev/null $html
         # TODO: Get from content source, but it must be in some translatable tag or attribute.
         # FIXME: When first adding a page, a placeholder page needs to be dropped in `en`
@@ -32,6 +34,7 @@ for lang in $(./translations.sh); do
         sed -e "s#@PAGE@#$page#g" -e "s#@TITLE@#$title#g" ../_$lang.src/_head.html >> "$tmp"
         cat "$html_src" >> "$tmp"
         sed -e "s#@PAGE@#$page#g" -e "s#@TITLE@#$title#g" ../_$lang.src/_tail.html >> "$tmp"
+        sed -i "s#@LANG@#$lang#g" "$tmp" 
         mv "$tmp" "$html"
     done
 

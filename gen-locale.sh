@@ -1,6 +1,6 @@
 #!/bin/sh
-# Usage: ./gen-translated-site.sh LANG
-# Example: ./gen-translated-site.sh fr 
+# Usage: ./gen-locale.sh LANG
+# Example: ./gen-locale.sh fr 
 # Generates translated site using the .po files in _LANG.src/, then
 # applies all overwrite files.
 
