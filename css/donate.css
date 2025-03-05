@@ -5,7 +5,7 @@ nav {
 .donate {
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    gap: 4em;
 }
 
 .donate-text {
@@ -27,7 +27,12 @@ nav {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 2em;
     }   
+    .donate-text {
+        padding-inline: 2em;
+        padding-bottom: 1em;
+    }
 }
 
 main p {
@@ -63,6 +68,7 @@ main p {
     .card {
         flex-direction: column;
         align-items: center;
+        margin-inline: 0.4em;
     }
     .card-text {
         display: flex;
