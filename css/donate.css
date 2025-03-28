@@ -5,8 +5,9 @@ nav {
 .donate {
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    gap: 4em;
 }
+
 .donate-text {
     display: flex;
     flex-direction: column;
@@ -15,24 +16,40 @@ nav {
 }
 
 .donate-text h1 {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 700;
     color: #06283C;
     margin: 0;
 }
 
-p {
-    font-size: 20px;
+@media (max-width: 1100px) {
+    .donate {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+    }   
+    .donate-text {
+        padding-inline: 2em;
+        padding-bottom: 1em;
+    }
+    .donate-text h1 {
+        font-size: 40px;
+    }
+}
+
+main p {
     font-weight: 400;
     color: #0B3954;
     margin: 0;
 }
 
 .donate-card-container {
-    margin-inline-end: calc(1.2em + calc(-0.5 * calc(100vw - 1100px)));
+    margin-inline-end: calc(-0.5 * calc(100vw - 1100px));
     display: flex;
     flex-direction: column;
     gap: 2em;
+    max-width: calc(100vw - 430px);
 }
 
 .card {
@@ -45,8 +62,27 @@ p {
     border-radius: 8px;
 }
 
+@media (max-width: 1100px) {
+    .donate-card-container {
+        margin-inline: auto;
+        justify-content: center;
+        max-width: 372px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 0.4em;
+    }
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-inline: 1em;
+    }
+}
+
 .card-text h2 {
-    font-size: 32px;
     color: #0B3954;
     margin-bottom: 0.4em;
 }
@@ -60,7 +96,6 @@ p {
     outline: 2px solid #EA580C;
     border-radius: 12px;
     width: fit-content;
-    font-size: 20px;
     margin-block: 1em;
 }
 
@@ -72,7 +107,6 @@ p {
     outline: 2px solid #EA580C;
     border-radius: 12px;
     width: fit-content;
-    font-size: 20px;
     margin-block: 1em;
 }
 
@@ -81,6 +115,8 @@ p {
 }
 
 .btc-addr {
-    font-size: 20px;
     font-weight: bold;
+    word-break: break-all;
+    text-wrap: wrap;
+    margin-top: 1em;
 }

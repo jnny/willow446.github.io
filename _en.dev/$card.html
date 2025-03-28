@@ -1,10 +1,16 @@
 <article class="news-article">
-    <div class="blog-post-meta"><time datetime="$date$">$date$</time></div>
-    <h1 itemprop="headline" class="blog-post-title">
-        <a href="$slug$">$title$</a>
-    </h1>
-    <div class="description"> $description$ <a href="$slug$">
-            <nobr>Read more →</nobr>
+    <div class="thumbnail">
+        <a href="$slug$.html">
+            <img src="$thumbnail$" />
         </a>
     </div>
+    <label class="$category$">$category$</label>
+    <div class="blog-post-meta"><time datetime="$date$">$date$</time></div>
+    <h1 itemprop="headline" class="blog-post-title">
+        <a href="$slug$.html">$title$</a>
+    </h1>
+    <div class="description">$description$ </div>
+    <a href="$slug$.html">
+        <nobr>Read more</nobr>
+    </a>
 </article>

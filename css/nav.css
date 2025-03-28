@@ -8,9 +8,9 @@
 
 /* nav panel */
 nav {
+    font-size: 20px;
     padding-inline: 1.2em;
     padding-block: 1.2em;
-    font-size: 20px;
     line-height: 24px;
     font-weight: 500;
     position: relative;
@@ -31,7 +31,6 @@ nav a:visited {
 }
 
 .desktop-nav {
-    font-size: 20px;
     line-height: 24px;
     width: 100%;
     display: flex;
@@ -193,6 +192,31 @@ nav .download-icon-btn {
     padding-block: 6px;
 }
 
+@media (max-width: 600px) {
+    nav {
+        padding-inline: 1em;
+        padding-block: 1em;
+
+    }
+    .mobile-nav-menu {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .i18n-toggle-icon img {
+        display: none;
+    }
+    nav {
+        padding-inline: 8px;
+        padding-block: 8px;
+
+    }
+    .mobile-nav-menu {
+        gap: 4px;
+    }
+}
+
 .mobile-nav-panel {
     display: none;
     position: absolute;
@@ -285,10 +309,5 @@ label .mobile-i18n-chevron {
 
     .download-btn {
         display: none;
-    }
-
-    nav {
-        margin-inline: 12px;
-        margin-block: 12px;
     }
 }

@@ -6,5 +6,6 @@ in pkgs.mkShell {
       python-pkgs.translate-toolkit
       python-pkgs.beautifulsoup4
     ]))
+    pkgs.pandoc
   ];
 }

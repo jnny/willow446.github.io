@@ -12,7 +12,6 @@
 }
 
 .hero-text > p {
-    font-size: 20px;
     font-weight: 400;
     color: #0B3954;
     margin-top: 12px;
@@ -57,23 +56,20 @@
         max-width: calc(100% - 4em);
         margin-inline: 1em;
     }
+    .hero-header {
+        font-size: 40px;
+    }
     .hero-text {
         margin-inline: 1em;
         max-width: 600px;
     }
     .hero-text p {
         margin-block: 1.4em;
+        font-size: 16px;
     }
     .store-badges {
         justify-content: center;
     }
-}
-
-@media (max-width: 400px) {
-    .hero-header {
-        font-size: 56px;
-    }
-
 }
 
 .ceno-in-media {
@@ -86,6 +82,10 @@
         display: block;
         padding-bottom: 2em;
     }
+}
+
+.ceno-in-media {
+    max-width: 100%;
 }
 
 .cim-margin {
@@ -106,8 +106,16 @@
 .media-logo-container {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    justify-content: space-around;
     height: 2.4em;
+    width: 100%;
+    max-width: 500px;
+}
+
+@media (max-width: 400px) {
+    .media-logo-container {
+        height: 1.8em;
+    }
 }
 
 .globe-section-container {
@@ -120,11 +128,14 @@
     flex-direction: row;
     align-items: center;
     gap: 96px;
-    font-size: 20px;
     background-color: #fff;
     color: #0B3954;
     font-weight: 400;
     padding-block: 2em;
+}
+
+.globe-section img {
+    max-width: 90%;
 }
 
 .globe-text {
@@ -197,7 +208,6 @@ li {
     text-align: center;
     align-items: center;
     max-width: 350px;
-    font-size: 20px;
 }
 
 @media (max-width: 1100px) {
@@ -207,6 +217,16 @@ li {
     }
     .info-item {
         max-width: 450px;
+    }
+}
+
+@media (max-width: 750px) {
+    .info-container {
+        margin-inline: auto;
+        max-width: 90%;
+    }
+    .info {
+        padding-inline: 1em;
     }
 }
 
@@ -243,7 +263,6 @@ li {
 
 .tri-display-item { 
     text-align: start;
-    font-size: 20px;
     font-weight: 400;
     color: #0B3954;
 }
@@ -280,7 +299,7 @@ li {
     flex-direction: column;
     align-items: center;
     margin-top: 5em;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 @media (max-width: 1100px) {
@@ -294,6 +313,47 @@ li {
     font-weight: 200;
     color: #0B3954;
     margin-bottom: 0.6em;
+}
+
+.larc {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    max-width: 30%;
+}
+
+.lcloud {
+    position: absolute;
+    bottom: 10vw;
+    left: 0;
+    max-width: 15%;
+}
+
+.rarc {
+    position: absolute;
+    top: -200px;
+    right: 0;
+    max-width: 30%;
+}
+
+.rcloud {
+    position: absolute;
+    top: -100px;
+    right: 15vw;
+    max-width: 15%;
+}
+
+@media (max-width: 750px) {
+    .lcloud, .rcloud, .larc, .rarc {
+        display: none;
+    }
+    .large-text-container {
+        padding-inline: 2em;
+    }
+    .large-text {
+        font-size: 32px;
+    }
+    
 }
 
 .dual-more-info {
@@ -322,7 +382,6 @@ li {
 .dual-display-item { 
     text-align: start;
     line-height: 1.5em;
-    font-size: 20px;
     font-weight: 400;
     max-width: 435px;
     color: #0B3954;
