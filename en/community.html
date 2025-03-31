@@ -122,10 +122,11 @@
                 <p>Run Ceno Browser on your Android device, and/or on a spare, always-on device.</p>
                 <h4>Run the Ceno Docker Client:</h4>
                 <ol>
-                    <li>With just one command you can set up a bridge on your computer or VPS: <code>sudo docker run --name ceno-client -dv ceno:/var/opt/ouinet --network host --restart unless-stopped equalitie/ceno-client</code></li>
+                    <li>With just one command you can set up a bridge on your computer or VPS: <br/>
+                        <code>sudo docker run --name ceno-client -dv ceno:/var/opt/ouinet --network host --restart unless-stopped equalitie/ceno-client</code></li>
                     <li>Open a portal to the internet: Ensure UPnP is enabled on your router, or set up port forwarding.</li>
                     <li>To see if it's working, create and open a new Firefox Profile, and set the proxy to localhost, port 8077.</li>
-                    <li>Install the Ceno Web Extension and the provided certificate to test it out!</li>
+                    <li>Install the <a href="https://gitlab.com/censorship-no/ceno-ext-settings">Ceno Web Extension</a> and the provided certificate to test it out!</li>
                 </ol>
             </div>
             <img src="/static/img/community/network.svg" />
@@ -138,13 +139,13 @@
                 <h2>Contribute to our code</h2>
                 <p>Ceno is a free and open source tool, one of many developed and maintained by eQualitie. If you are interested in Ceno's source code please check the following Git repositories:</p>
                 <ul>
-                    <li><a href="TODO">Ceno Browser</a></li>
-                    <li><a href="TODO">Ceno Desktop</a></li>
-                    <li><a href="TODO">Ceno iOS</a></li>
-                    <li><a href="TODO">Ouinet</a></li>
-                    <li><a href="TODO">Ceno Docker Client</a></li>
+                    <li><a href="https://gitlab.com/censorship-no/ceno-browser">Ceno for Android</a></li>
+                    <li><a href="https://gitlab.com/censorship-no/ceno-desktop">Ceno for Desktop</a></li>
+                    <li><a href="https://gitlab.com/censorship-no/ceno-ios">Ceno for iOS</a></li>
+                    <li><a href="https://gitlab.com/equalitie/ouinet">Ouinet</a></li>
+                    <li><a href="https://gitlab.com/censorship-no/ceno-docker-client">Ceno Docker Client</a></li>
                 </ul>
-                <p>You may also be interested in the (no longer maintained) previous incarnation of Ceno, built on the Freenet anonymous file sharing and content publishing network.</p>
+                <p>You may also be interested in the (no longer maintained) <a href="https://gitlab.com/censorship-no/ceno-archives">previous incarnation of Ceno</a>, built on the Freenet anonymous file sharing and content publishing network.</p>
             </div>
         </div>
     </section>
@@ -154,9 +155,9 @@
                 <h2>Share your feedback</h2>
                 <p>Ceno relies on user feedback to understand the needs of our users, to suggest improvements, and to identify new features. Sharing your story also helps spread the word about Ceno, which grows the network. With your consent, we may also highlight your story on our website!</p>
                 <ul>
-                    <li><a href="TODO">Write a review on the Play Store</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Write a review on the Play Store</a></li>
                     <li>Get in touch with the team: support [at] censorship [dot] no</li>
-                    <li><a href="TODO">Take a survey</a></li>
+                    <li><a href="https://survey.ouinet.work">Take a survey</a></li>
                 </ul>
             </div>
             <img src="/static/img/community/dial.svg" />
@@ -176,54 +177,54 @@
             <div class="feedback-text">
                 <h2>Help translate</h2>
                 <p>Help translate the Ceno Browser app, web extension, user manual and website! We use Weblate to crowdsource translations.</p>
-                <p><a>Join our Weblate</a></p>
+                <p><a href="https://hosted.weblate.org/projects/censorship-no/">Join our Weblate</a></p>
                 <p>Please contact the Ceno team at support [at] censorship [dot] no if you're interested in becoming a reviewer for translation(s) in your language(s).</p>
-                <p>For more information about how to use <a href="TODO">Weblate, see the Weblate documentation.</a></p>
+                <p>For more information about how to use Weblate, see <a href="https://docs.weblate.org/en/latest/index.html">the Weblate documentation.</a></p>
             </div>
             <img src="/static/img/community/orbs.svg" />
         </div>
     </section>
-</main><footer>
+</main>
+<footer>
   <div class="footer-margin row">
     <div class="ceno-footer-statement">
         <div>
             <a tabindex="1" class="logo" href="index.html"><img height="43" width="141" src="/static/img/logos/ceno-logo.png" /></a>
         </div>
-        <p>Ceno Browser is a project by eQualit.ie – a not-for-profit Canadian organization. Everyday, eQualitie's solutions enable freedom of association for millions of people online.</p>
-        <p><a href="">Terms of use</a>   |   <a href="">Privacy policy</a></p>
-        <p>© eQualitie 2018-2024</p>
+        <p>Ceno Browser is a project by <a href="https://equalitie.org">eQualit.ie</a> – a not-for-profit Canadian organization. Everyday, eQualitie's solutions enable freedom of association for millions of people online.</p>
+        <p><a href="privacy_policy.html">Terms of Use and Privacy Policy</a></p>
+        <p>© eQualitie 2018-2025</p>
     </div>
     <div class="footer-links">
         <div class="text-links">
             <div class="link-col">
-                <a href="">About</a>
-                <a href="">Community</a>
-                <a href="">FAQs</a>
-                <a href="">Get Support</a>
-                <a href="" class="link-btn blue-bg">Donate</a>
+                <a href="about.html">About</a>
+                <a href="community.html">Community</a>
+                <a href="faq.html">FAQs</a>
+                <a href="support.html">Get Support</a>
+                <a href="donate.html" class="link-btn blue-bg">Donate</a>
             </div>
             <div class="link-col">
-                <a href="">Case Studies</a>
-                <a href="">Fact Sheet</a>
-                <a href="">User Manual</a>
-                <a href="">Whitepaper</a>
-                <a href="" class="link-btn orange-bg">Download</a>
+                <a href="casestudies.html">Case Studies</a>
+                <a href="factsheet.html">Fact Sheet</a>
+                <a href="../user-manual/">User Manual</a>
+                <a href="https://gitlab.com/equalitie/ouinet/blob/main/doc/ouinet-network-whitepaper.md">Whitepaper</a>
+                <a href="download.html" class="link-btn orange-bg">Download</a>
             </div>
         </div>
         <div class="social-icon-grid">
-            <a href=""><img src="/static/img/icons/social-logos/fb.svg"/></a>
-            <a href=""><img src="/static/img/icons/social-logos/twitter.svg"/></a>
+            <a href="https://facebook.com/cenobrowser"><img src="/static/img/icons/social-logos/fb.svg"/></a>
+            <a href="https://twitter.com/cenobrowser"><img src="/static/img/icons/social-logos/twitter.svg"/></a>
             <a href=""><img src="/static/img/icons/social-logos/ig.svg"/></a>
             <a href=""><img src="/static/img/icons/social-logos/yt.svg"/></a>
             <a href=""><img src="/static/img/icons/social-logos/linkedin.svg"/></a>
-            <a href="" class="mail-icon"><img src="/static/img/icons/social-logos/mail.svg"/></a>
+            <a href="mailto:support@censorship.no" class="mail-icon"><img src="/static/img/icons/social-logos/mail.svg"/></a>
             <a href=""><img src="/static/img/icons/social-logos/mastodon.svg"/></a>
-            <a href=""><img src="/static/img/icons/social-logos/gitlab.svg" height="24" width="24"/></a>
+            <a href="https://gitlab.com/censorship-no"><img src="/static/img/icons/social-logos/gitlab.svg" height="24" width="24"/></a>
         </div>
     </div>
   </div>
 </footer>
 <div class="cenoid-footer">
     <img src="/static/img/footer/cenoid-footer.svg"/>
-</div></body>
-</html>
+</div>
